@@ -1,13 +1,76 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{              
+  min-width: 100%;        
+  min-height: 100vh;
+  background-color: rgb(247, 220, 220);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: space-evenly;
+}
+.Header{
+  width: 100%;
+  margin: auto;
+  background-color: rgb(240, 187, 205);
+  display: flex;
+  justify-content: center;
+}
+.header-brand{
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.NoteList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+}
+.Card{
+  margin-bottom: 1REM;
+  max-width: 50rem;
+}
+.CreateNote{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form button{
+  margin: auto;
+}
+
+.Btn{
+  background-color: rgb(205, 147, 166);
+  font-size: 1rem;
+  border: none;
+  padding: .8rem;
+  width: 30%;
+  font-weight: 600;
+
+}
+.Btn:hover {
+  background-color: rgb(190, 130, 150);
+  cursor: pointer;
+}
+
+p{
+  color: rgb(30, 27, 28);
+  margin-top: .5rem;
 }
